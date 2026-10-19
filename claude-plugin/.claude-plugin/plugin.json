@@ -1,0 +1,31 @@
+{
+  "name": "tempo-calendar",
+  "displayName": "Tempo Calendar",
+  "version": "1.0.0",
+  "description": "Connect Claude Code to Tempo Calendar on your Mac to view and change your events and tasks. Requires Tempo for Mac with AI Integration turned on.",
+  "author": {
+    "name": "Rocky"
+  },
+  "homepage": "https://github.com/Betmoong/tempo-calendar-ai",
+  "repository": "https://github.com/Betmoong/tempo-calendar-ai",
+  "license": "MIT",
+  "keywords": ["calendar", "tasks", "reminders", "events", "macos", "productivity", "mcp"],
+  "icon": "./icon.png",
+  "privacyPolicyUrl": "https://docs.google.com/document/d/e/2PACX-1vRVJhs9m9R__UwCHyKlb0-_IQsYqUOJhBSblpw9V2led1ShElDvY4IcpUTvLj3mhN28-s3NzxfAGJr2/pub",
+  "userConfig": {
+    "tempo_token": {
+      "type": "string",
+      "title": "Tempo token",
+      "description": "In Tempo, open Settings > AI Integration, click How to Connect next to Claude Code, then click Copy Token Only.",
+      "sensitive": true,
+      "required": true
+    },
+    "tempo_url": {
+      "type": "string",
+      "title": "Tempo address",
+      "description": "Keep the default unless you changed the port in Tempo's settings.",
+      "default": "http://127.0.0.1:47321/mcp",
+      "required": true
+    }
+  }
+}

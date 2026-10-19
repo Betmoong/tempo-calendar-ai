@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "tempo": {
+      "type": "http",
+      "url": "${user_config.tempo_url}",
+      "headers": {
+        "Authorization": "Bearer ${user_config.tempo_token}"
+      }
+    }
+  }
+}
